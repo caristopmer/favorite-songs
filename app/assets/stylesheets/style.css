@@ -1,0 +1,18 @@
+body {
+  margin: 1%;
+}
+
+.song {
+ background-color: gainsboro;
+ padding: 5px;
+ margin: 5px;
+ width: 150px;
+}
+
+.song-title {
+ font-style: italic;
+}
+
+.song-artist {
+
+}
