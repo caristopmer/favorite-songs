@@ -16,3 +16,7 @@ body {
 .song-artist {
 
 }
+
+.errors {
+  color: red;
+}

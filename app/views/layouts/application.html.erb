@@ -10,6 +10,16 @@
 
   <body>
   <h1>That's My Song!</h1>
+  <ul id="navigation">
+    <li><%= link_to "Home", '/' %></li>
+    <% if logged_in? %>
+      <li><%= current_user.email %></li>
+      <li><%= link_to "Log Out", sessions_path, method: :delete %></li>
+    <% else %>
+      <li><%= link_to "Log In", new_session_path %></li>
+      <li><%= link_to "Register", new_user_path %></li>
+    <% end %>
+  </ul>
     <%= yield %>
   </body>
 </html>
